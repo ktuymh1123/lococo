@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lococo ~Patiserie&Cafe~</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo-3.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="header-logo">
+            <a href="#">
+                <img src="image/logo-3.png" alt="ロゴボタン">
+            </a>
+        </h1>
+
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">トップへ</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">商品一覧</a></li>
+                        <li><a href="#">ご予約・お問合せ</a></li>
+                        <li><a href="#">店鋪情報</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainvisual">
+            <img src="image/main-visual-1.jpg" alt="">
+        </div>
+
+        <article class="concept">
+            <div class="wrapper">
+                <div class="section-title">
+                    <h2>concept</h2>
+                    <p>コンセプト</p>
+                </div>
+                <div class="concept-inner">
+                    <div class="concept-massage">
+                        <h3 class="concept-title">ロココなケーキで<br>こころも優雅に</h3>
+                        <p class="concept-text">
+                            当店の商品は、中世ヨーロッパで流行したデザインである「ロココ様式」をもとに
+                            心を込めて作っています。パステルカラーの柔らかい色彩、華やかなデザインなど、
+                            心躍るような雰囲気にこだわる事で疲れた心を癒し、ほんのひと時でも優雅な気分に浸りたい
+                            そんな理想を叶えるため、日々の作品作りに取り組んでいます。
+                        </p>
+                    </div>
+                    <div class="concept-btn">
+                        <a href="#" class="btn">Lococoの想い</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="container">
+            <article class="recommend">
+                <div class="wrapper">
+                    <div class="section-title">
+                        <h2>recommend</h2>
+                        <p>おすすめ品</p>
+                    </div>
+
+                    <div class="recommend-img">
+                        <div><a href="#"><img src="image/cake-1.jpg" alt="" class="img1 inview "></a></div>
+                        <div><a href="#"><img src="image/cake-2.jpg" alt="" class="img2"></a></div>
+                        <div><a href="#"><img src="image/cake-3.jpg" alt="" class="img3"></a></div>
+                        <div><a href="#"><img src="image/cake-4.jpg" alt="" class="img4"></a></div>
+                        <div><a href="#"><img src="image/cookie-1.jpg" alt="" class="img5"></a></div>
+                        <div><a href="#"><img src="image/cookie-2.jpg" alt="" class="img6"></a></div>
+                        <div><a href="#"><img src="image/cookie-3.jpg" alt="" class="img7"></a></div>
+                        <div><a href="#"><img src="image/drink-1.jpg" alt="" class="img8"></a></div>
+                        <div><a href="#"><img src="image/drink-3.jpg" alt="" class="img9"></a></div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article class="menu">
+                <div class="wrapper">
+                    <div class="section-title">
+                        <h2>menu</h2>
+                        <p>メニュー</p>
+                    </div>
+                    <div class="menu-btns">
+                        <section class="menu-btn">
+                            <a href="#">
+                                <div class="cake-img">
+                                    <img src="image/cake-1.jpg" alt="">
+                                </div>
+                                <div class="menu-text">
+                                    <h3>cake</h3>
+                                    <p>ケーキ</p>
+                                </div>
+                            </a>
+                        </section>
+                        <section class="menu-btn">
+                            <a href="#">
+                                <div class="cookie-img">
+                                    <img src="image/cookie-1.jpg" alt="">
+                                </div>
+                                <div class="menu-text">
+                                    <h3>cookie</h3>
+                                    <p>クッキー</p>
+                                </div>
+                            </a>
+                        </section>
+                        <section class="menu-btn">
+                            <a href="#">
+                                <div class="drink-img">
+                                    <img src="image/drink-1.jpg" alt="">
+                                </div>
+                                <div class="menu-text">
+                                    <h3>drink</h3>
+                                    <p>ドリンク</p>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </article>
+
+            <article class="about wrapper">
+                <div class="section-title">
+                    <h2>about</h2>
+                    <p>商品について</p>
+                </div>
+                <section class="about-cake">
+                    <a href="#">
+                        <img src="image/cake-1.jpg" alt="">
+                    </a>
+                    <div class="about-text">
+                        <div class="about-title">
+                            <h3>cake</h3>
+                            <p>ケーキ</p>
+                        </div>
+                        <p>18世紀フランスのロココ様式を現代風にアレンジ。<br>
+                            繊細なアイシング、食用パール、
+                            そしてお店のシグネチャーである「バラ」を象ったクリームなど、細部にまで
+                            装飾が
+                            施されています。天然由来の着色料のみを
+                            使用し、淡く優しいパステルカラーを表現。<br>
+                            見ているだけで心が浮き立つような仕上がりを徹底しています。
+                        </p>
+                    </div>
+                </section>
+
+                <section class="about-cookie">
+                    <div class="about-text">
+                        <div class="about-title">
+                            <h3>cookie</h3>
+                            <p>クッキー</p>
+                        </div>
+                        <p>
+                            「Lococo」のクッキーは、<br>
+                            「宝石箱を開けた時のときめき」を
+                            コンセプトにしています。
+                            一枚一枚がまるで工芸品のように繊細で、口にした
+                            瞬間に魔法が解けるような食感に仕上げています。
+                            アイシングは熟練のパティシエが一つひとつ手作業で描いています。<br>
+                            量産品にはない、温かみと気品が宿っています。
+                        </p>
+                    </div>
+                    <a href="#">
+                        <img src="image/cookie-1.jpg" alt="">
+                    </a>
+                </section>
+
+                <section class="about-drink">
+                    <a href="#">
+                        <img src="image/drink-1.jpg" alt="">
+                    </a>
+                    <div class="about-text">
+                        <div class="about-title">
+                            <h3>drink</h3>
+                            <p>ドリンク</p>
+                        </div>
+                        <p>
+                            ケーキやクッキーの繊細な風味を最大限に引き立てるため、
+                            ドリンク一杯にも並々ならぬこだわりを注いでいます。<br>
+                            カップ&ソーサーは、19世紀のアンティークや、
+                            職人が一つひとつ金彩を施したボーンチャイナを使用しています。
+                            指先に触れる磁器の質感、お茶を注ぐ時の美しい色合いまで含めて,
+                            「Loecco」のドリンク体験です。
+                        </p>
+                    </div>
+                </section>
+                <div class="about-btn">
+                    <a href="#" class="btn">商品へのこだわり・材料について</a>
+                </div>
+            </article>
+
+            <article class="reservation">
+                <div class="wrapper">
+                    <div class="section-title">
+                        <h2>reservation</h2>
+                        <p>ご予約・お問合せ</p>
+                    </div>
+                    <div class="reservation-back">
+                        <section class="reservation-text">
+                            <p>
+                                バースデーケーキ、お祝いのケーキの御予約承ります。<br>
+                                ケーキ完成までお時間が掛かる場合がございますので
+                                お渡し日の２〜３週間程前のご予約がお勧めです。<br>
+                                下記の電話番号もしくはご予約情報入力フォームからお願い致します。
+                            </p>
+                        </section>
+                        <section class="reservation-btns">
+                            <div class="left-btn">
+                                <a href="#" class="btn">
+                                    <h3><span>Tel.</span>000-0000-0000</h3>
+                                    受付時間：10:00~18:00
+                                </a>
+                            </div>
+                            <h4>or</h4>
+                            <div class="right-btn">
+                                <a href="#" class="btn">
+                                    <p>入力フォームから予約する</p>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+
+            <article class="information">
+                <div class="wrapper">
+                    <div class="section-title">
+                        <h2>Store information</h2>
+                        <p>店鋪情報</p>
+                    </div>
+                    <ul class="info-image">
+                        <li><img src="image/shop-out4.jpg" alt=""></li>
+                        <li><img src="image/shop-out2.jpg" alt=""></li>
+                        <li><img src="image/shop-out3.jpg" alt=""></li>
+                    </ul>
+
+                    <section class="info-down">
+                        <section class="info-left">
+                            <div class="responsive-flex">
+                                <a href="#" class="info-logo">
+                                    <h4>Lococo</h4>
+                                    <p>Patiserie&Cafe</p>
+                                </a>
+                                <dl>
+                                    <dt>住所</dt>
+                                    <dd>〒000−0000</dd>
+                                    <dt></dt>
+                                    <dd>〇〇県〇〇市〇〇１丁目１−1</dd>
+                                    <dt>距離</dt>
+                                    <dd>〇〇駅から徒歩３分</dd>
+                                    <dt>営業時間</dt>
+                                    <dd>10:00~18:00</dd>
+                                    <dt>定休日</dt>
+                                    <dd>火・木</dd>
+                                    <dt>Tel</dt>
+                                    <dd>000-0000-0000</dd>
+                                    <dt></dt>
+                                    <dd>（受付時間：10:00~18:00）</dd>
+                                </dl>
+                            </div>
+
+                            <ul>
+                                <li>各種クレジット・電子決済OK</li>
+                                <li>カフェスペースあり</li>
+                                <li>テイクアウトOK</li>
+                                <li>ラッピング承ります</li>
+                            </ul>
+                        </section>
+                        <section class="info-right">
+                            <iframe class="google-map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8862553602853!2d139.76229007593037!3d35.67980263005222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfa4ae94675%3A0x9f64e11ee9dc660a!2zS0lUVEXkuLjjga7lhoU!5e0!3m2!1sja!2sjp!4v1767598728896!5m2!1sja!2sjp"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="#" class="google-btn btn">
+                                <!-- googlemapアイコン -->
+                                googleマップで見る
+                            </a>
+                        </section>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#" class="f-btn">よくあるご質問</a>
+            </li>
+            <li>
+                <a href="#" class="f-btn">お問合せ</a>
+            </li>
+            <li>
+                <a href="#" class="f-btn">会社概要</a>
+            </li>
+            <li>
+                <a href="#" class="f-btn">アレルギー情報</a>
+            </li>
+        </ul>
+        <p>ooo@oooo.oooo</p>
+    </footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https:slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
