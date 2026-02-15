@@ -32,6 +32,17 @@ a{
 .section-title h2{
     font-size: 40px;
     margin: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title h2::after,
+.section-title h2::before{
+    content: "";
+    width: 30%;
+    border-top: 1px solid black;
 }
 
 .section-title p{
@@ -52,11 +63,11 @@ a{
     box-shadow: none;
 }
 
+/*  */
 .wrapper{
     margin:0 80px;
     /* padding: 80px 0; */
 }
-
 
 /* -----------------------------------------------------
 ヘッダー
@@ -85,6 +96,7 @@ nav{
     transition: all 0.5s;
     z-index: 3;
     opacity: 0;
+    overflow: scroll;
 }
 
 .open  nav{
@@ -94,6 +106,7 @@ nav{
 
 nav .inner{
     padding: 25px;
+    
 }
 
 nav .inner ul{
@@ -200,7 +213,6 @@ nav li a:hover{
 /* ----------------------------------------------
 コンセプト
 ----------------------------------------------- */
-
 .concept{
     background-image: linear-gradient(
         90deg, #98c3cd, #ffd0eacc
@@ -254,12 +266,15 @@ nav li a:hover{
 /* ------------------------------------------------
 おすすめ品
 ------------------------------------------------- */
+#recommend{
+    padding-top: 80px;
+}
+
 .recommend-img a{
     display: inline-block;
     border-radius: 50%;
     position: relative;
 }
-
 .recommend-img a::after{
     position: absolute;
     content: "+商品ページへ";
@@ -292,6 +307,9 @@ nav li a:hover{
 /*-----------------------------------------------
 メニュー
 ------------------------------------------------- */
+#menu{
+    padding-top: 80px;
+}
 
 .cake-img img,
 .cookie-img img,
@@ -372,9 +390,13 @@ nav li a:hover{
 /*------------------------------------------------ 
 アバウト
 ------------------------------------------------- */
-.about{
+#about{
+    margin: 0 80px;
+    padding-top: 80px;
+}
+
+#about .wrapper{
     max-width: 1000px;
-    padding: 80px;
     margin: auto;
 }
 
@@ -386,7 +408,7 @@ nav li a:hover{
     height: 500px;
 }
 
-.about img{
+#about img{
     height: 500px;
     object-fit: cover;
 }
@@ -397,7 +419,7 @@ nav li a:hover{
     display: flex;
 }
 
-.about a{
+#about a{
     display: inline-block;
 }
 
@@ -488,8 +510,9 @@ nav li a:hover{
 /* -----------------------------------------------
 ご予約・お問合せ 
 ------------------------------------------------*/
-.reservation{
+#reservation{
     margin-bottom: 80px;
+    padding-top: 80px;
 }
 
 .reservation-back{
@@ -568,8 +591,8 @@ nav li a:hover{
 /* ----------------------------------------------
 店鋪情報
 ------------------------------------------------ */
-.information{
-    padding-bottom: 80px;
+#information{
+    padding: 80px 0;
 }
 
 /* 外観の写真 */
@@ -753,6 +776,12 @@ footer a{
         padding: calc(100px - 7.5px) 0;
     }
 
+    /* メインビジュアル */
+    .mainvisual img{
+        height: 100vh;
+        object-fit: cover;
+    }
+
     /* アバウト */
     .about-cake,
     .about-cookie,
@@ -853,7 +882,7 @@ footer a{
     }
 
     /* 予約 */
-    .reservation .wrapper{
+    #reservation .wrapper{
         padding: 0 16px;
     }
 
@@ -896,11 +925,11 @@ footer a{
         margin:0 16px;
     }
 
-    .about{
+    #about{
         padding: 0;
     }
 
-    .article{
+    article{
         padding: 0;
     }
 
