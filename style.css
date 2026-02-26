@@ -26,7 +26,7 @@ a{
 /* セクションタイトル*/
 .section-title{
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
 }
 
 .section-title h2{
@@ -391,13 +391,12 @@ nav li a:hover{
 アバウト
 ------------------------------------------------- */
 #about{
-    margin: 0 80px;
     padding-top: 80px;
 }
 
-#about .wrapper{
-    max-width: 1000px;
+#about section{
     margin: auto;
+    max-width: 1000px;
 }
 
 .about-cake a,
@@ -783,10 +782,14 @@ footer a{
     }
 
     /* アバウト */
+    #about section{
+        margin: 0 80px 80px 80px ;
+    }
+
     .about-cake,
     .about-cookie,
     .about-drink{
-        margin-bottom: 40px;
+        margin: 80px;
         flex-direction: column;
     }
 
@@ -797,9 +800,13 @@ footer a{
         border: 1px solid white;
     }
     
-    .about-cake a,
-    .about-cookie a,
-    .about-drink a{
+    .about-cake img,
+    .about-cookie img,
+    .about-drink img{
+        display: none;
+    }
+
+    #about a{
         display: none;
     }
 
@@ -863,6 +870,23 @@ footer a{
 }
 
 @media(max-width:760px){
+
+    .concept .section-title,
+    #recommend .section-title,
+    #menu .section-title,
+    #information .section-title{
+        padding: 0 16px;
+    }
+
+    #about .section-title{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #about section{
+        margin: 0 40px 80px 40px;
+    }
+
     .wrapper{
         margin: 0;
     }
@@ -888,6 +912,10 @@ footer a{
 
 
     /* 店舗情報 */
+    #information .section-title{
+        padding-bottom: 40px;
+    }
+
     .responsive-flex{
         flex-direction: column;
         padding: 0 40px;
@@ -927,6 +955,10 @@ footer a{
 
     #about{
         padding: 0;
+    }
+
+    #about section{
+        margin: 0 20px 40px 20px;
     }
 
     article{
